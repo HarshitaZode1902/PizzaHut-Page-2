@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>task 6</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+ 
+  <style>
+
+    #img{
+      margin-top: 18px;margin-left: 250px;margin-bottom: 18px;height:28px; width:132px;
+    }
+
+    .bg_img{
+            background-image: url("./assets/bg1.jpg");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: 100%;
+            height: 400px; width: 100%;
+          }
+    #heading{
+      font-size: 19.5px;
+      text-align: center;
+      
+    }
+    .nav-item{
+      background-color: rgb(203, 203, 203);
+      color: darkgrey;
+    }
+    #content{
+      margin-left: 500px;margin-right: 500px;
+      border: 2px solid white;
+      margin-top: -120px;
+      background-color: white;
+    }
+
+    .tab-content{
+      margin-left: 500px;margin-right: 500px;
+      border: 2px solid rgb(235, 234, 234);
+      background-color: white;
+    }
+    #row1{
+      margin-left: 220px;margin-right: 220px;
+    }
+
+    
+    .footer{
+      background-color: black;
+    }
+
+    #frow1{
+      padding-left: 230px;padding-right: 120px;
+    }
+
+    #fcol{
+      margin-top:50px;color: white;
+    }
+
+    #img2{
+      height: 72px;width: 72px;margin-left: 730px;margin-right: 730px;border-radius: 7px;
+    }
+
+    #btn{
+      background-color:#0A8020 ;color:white;padding: 12px 16px;font-size: 19.6px;
+      margin-top: 20px;margin-bottom: 30px;margin-left: 232px;margin-right: 230px;width: 69%;
+      
+    }
+
+    #p1{
+      background-color: rgb(84, 83, 83);font-size: 10.5px;text-align: center;color: white;
+    }
+
+  </style>
+</head>
+
+
+<body>
+  
+  <div class="row bg-white ">
+    <div class="col-lg-9 ">
+        <img src="./assets/pizza-hut-logo1.png"  alt="Pizza Hut Logo" style="width: 155px; height: 30px; margin-top: 15px;margin-bottom: 15px; margin-left: 240px;">
+    </div>
+    <div class="col-lg-3" style="margin-top: 17px;padding-left: 82px;">
+        <a href="#" class="sign_in" >Sign in</a>
+    </div>
+</div>
+
+  <div class="container-fluid" >
+
+    <div class="bg_img"></div>
+
+      <ul class="nav nav-tabs nav-justified justify-content-center" id="content" role="tablist" >
+      <li class="nav-item ">
+          <a class="nav-link active " data-toggle="tab" href="#home">
+              <h5 class="nav_tab"><img src="./assets/delivery-bike.gif"> Delivery</h5>
+          </a>
+      </li>
+      <li class="nav-item ">
+          <a class="nav-link " data-toggle="tab" href="#menu">
+              <h5 class="nav_tab"><img src="./assets/collection.gif"> Takeaway</h5>
+          </a>
+      </li>
+      </ul>
+       
+      <div class="tab-content" >
+
+          <div id="home" class="container tab-pane  active "><br>
+              <p><b>CONTACTLESS DELIVERY</b></p>
+              <p>Contactless Delivery is now available! <a href="#" style="color: black;" ><u>Learn More</u></a></p>
+              <table class="table table-bordered" >
+                  <tr>
+                      <td>
+                          <form>
+                              <input type="text" class="form-control" id="location" placeholder="Enter your location for delivery" name="location" style="font-size: 20px; border: 0px; margin:-10px;">
+                          </form>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <a href="#" style="font-size: 13px; ">Find my current location</a>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+
+          <div id="menu" class="container tab-pane fade "><br>
+              <p><b>CONTACTLESS TAKEAWAY IS NOW AVAILABLE.</b></p>
+              <p>Order Online & collect safely.</p>
+              <table class="table table-bordered" >
+                  <tr>
+                      <td>
+                          <form>
+                              <input type="text" class="form-control" id="location" placeholder="Enter your takeway location" name="location" style="font-size: 20px; border: 0px; margin:-10px;">
+                          </form>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <a href="#" style="font-size: 13px; ">Find my current location</a>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+
+      <br><br>
+
+    <div class="row">
+      <div class="col-lg-5" style="border: 1px double rgb(183, 182, 182);height: 1px;margin-top: 16px;"></div>
+      <div class="col-lg-2" id="heading"><b>Our Most Popular Deals</b></div>
+      <div class="col-lg-5" style="border: 1px double rgb(183, 182, 182);height: 1px;margin-top: 16px;"></div>
+    </div>
+
+    <br>
+
+    <div class="row" id="row1">
+      <div class="col-lg-6">
+        <img src="./assets/img2.jpg" alt="img2" style="height: 300px;width:495px;" >
+        <p id="p1">Deal may vary by location , only at participating stores , excluding dine-in restaurants , T&Cs apply</p>
+      </div>
+      <div class="col-lg-6" >
+        <img src="./assets/img3.jpg" alt="img2" style="height: 300px;width:495px;" >
+        <p id="p1">Deal may vary by location , only at participating stores , excluding dine-in restaurants , T&Cs apply</p>
+      </div>
+    </div>
+    
+    <button type="button" class="btn " id="btn"><b>View All Deals</b></button>
+
+  </div>
+
+  <div class="footer" >
+
+    <div class="row" id="frow1">
+
+      <div class="col-lg-3" id="fcol" >
+        <p style="font-size: 17.12px;">Order Now</p>
+        <p style="font-size: 11px;" id="#p2">Deals<br>Pizza<br>Sides<br>Drinks<br>Desserts</p>
+      </div>
+      <div class="col-lg-3" id="fcol">
+        <p style="font-size: 17.12px;">About Us</p>
+        <p style="font-size: 11px;">About Us<br>Contactless Delivery<br>Nutrition</p>
+      </div>
+      <div class="col-lg-3" id="fcol">
+        <p style="font-size: 17.12px;">Our Policies</p>
+        <p style="font-size: 11px;">Terms & Conditions<br>FAQs & Help</p>
+      </div>
+      <div class="col-lg-3" id="fcol">
+        <p style="font-size: 17.12px;">Visit Pizza Hut</p>
+        <p style="font-size: 11px;">Locate a store<br>Global Blog</p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-lg-6 " >
+        <a href="#">
+          <img src="./assets/appstore2.jpg" alt="appstore" height="36px" style="float: right;">
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a href="#">
+          <img src="./assets/Googleplay1.png" alt="google_play" height="36px" >
+        </a>
+      </div>
+    </div>
+
+    <div class="row" style="padding-right: 300px;padding-left: 240px;">
+
+      <div class="col-lg-7" style="margin-top: 25px;">
+        <p style="font-size:14px;color: white;">Help us in serving you better
+          <a href="#">
+            <button type="button" class="btn btn-light" style="margin-left: 12px;">Give Feedback</button>
+          </a>
+        </p>
+      </div>
+      
+      <div class="col-lg-5" style="text-align: center;">
+        <div class="row">
+          <div class="col-lg-12">
+            <p style="font-size:17.12px;color: white;"> Follow Us</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            
+            <i class="fab fa-facebook" style="color: white;font-size: 25px;"></i>
+            <i class="fab fa-twitter" style="color: white;font-size: 25px;"></i>
+            <i class="fab fa-instagram"style="color: white;font-size: 25px;"></i>
+            <i class="fab fa-youtube"style="color: white;font-size: 25px;"></i>
+
+          </div>
+        </div>       
+      </div>
+    </div>
+
+    <div class="row" style="padding-left:220px;padding-right:220px;">
+      <div class="col-lg-12">
+        <p style="font-size: 12px; color:#78838C;text-align: center;">
+          Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is happy to assist you with your home delivery. Every time you order, 
+          you get a hot and fresh pizza delivered at your doorstep in less than thirty minutes. *T&C Apply.
+          <br>Hurry up and place your order now!<br>© 2022 Pizza Hut India. All rights reserved. License Number: 10017011004220
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12"><img src="./assets/fssai.png" id="img2"></div>
+    </div>
+  </div>
+
+</body>
+</html>
